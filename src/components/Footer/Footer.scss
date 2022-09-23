@@ -1,0 +1,16 @@
+@use 'src/_colors.scss';
+
+.footer {
+  background-color: colors.$purple;
+  border-top: 10px solid colors.$purple-light;
+  color: #fff;
+  text-align: center;
+  padding: 63px 0;
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+}
+
+.designed {
+  margin-bottom: 14px;
+}

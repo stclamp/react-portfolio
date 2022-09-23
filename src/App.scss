@@ -1,0 +1,24 @@
+@use 'src/_colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+
+}
+
+.App {
+  background-color: colors.$yellow;
+  min-height: 100vh;
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 1048px;
+  margin: 0 auto;
+
+}
+

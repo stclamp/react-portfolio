@@ -1,0 +1,26 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease;
+  z-index: 999;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &_content {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+}
