@@ -20,8 +20,22 @@
 
   &_content {
     padding: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    height: 90vh;
+    position: relative;
+
+    .modal_close {
+      position: fixed;
+      right: 250px;
+      top: 110px;
+      cursor: pointer;
+      path {
+        stroke: #000;
+      }
+    }
+    .modal_img {
+      border-radius: 10px;
+      width: 80vw;
+      height: 80vh;
+      object-fit: contain;
+    }
   }
 }
