@@ -55,6 +55,11 @@
     line-height: 29px;
     color: rgba(255,255,255,.5);
     transition: 0.5s ease;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+    }
 
     &:hover {
       color: #fff;

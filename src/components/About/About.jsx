@@ -2,7 +2,7 @@ import './About.scss'
 
 const About = ({isActive}) => {
     return (
-        <div className={isActive ? 'about active' : 'about'}>
+        <div className={isActive ? 'about active' : 'about'} id="about">
             <div className="container">
                 <h1 className="about_title">PAVEL <span>EVTUSHENKO</span></h1>
                 <h4 className="about_subtitle">Junior Front-end developer</h4>
