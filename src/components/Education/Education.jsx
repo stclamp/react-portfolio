@@ -2,7 +2,7 @@ import './Education.scss'
 import Modal from "../Modal/Modal";
 import {useState} from "react";
 
-const Education = ({education}) => {
+const Education = ({education, isActive}) => {
     const [modalActive, setModalActive] = useState(false);
     const [index, setIndex] = useState(0);
 
@@ -12,11 +12,11 @@ const Education = ({education}) => {
     }
 
     return (
-        <div className='education'>
+        <div className={isActive ? 'education active' : 'education'}>
             <div className="container">
                 <h2 className="education_title">EDUCATION</h2>
                 {education.map((item,i) => (
-                    <div key={item} className="education_block">
+                    <div key={i} className="education_block">
                         <div className="education_info">
                             <div className="education_job">
                                 <h4 className="education_job_title">{item.title}</h4>

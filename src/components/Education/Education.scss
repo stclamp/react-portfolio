@@ -1,10 +1,15 @@
 @use 'src/_colors.scss';
 
 .education {
-  margin-left: 600px;
+
   padding-top: 86px;
   padding-bottom: 97px;
   position: relative;
+  transition: 0.5s ease;
+
+  &.active {
+    margin-left: 600px;
+  }
 
   &::after {
     content: '';

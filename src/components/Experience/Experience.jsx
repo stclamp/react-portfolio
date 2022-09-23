@@ -1,12 +1,12 @@
 import './Experience.scss'
 
-const Experience = ({experience}) => {
+const Experience = ({experience, isActive}) => {
     return (
-        <div className='experience'>
+        <div className={isActive ? 'experience active' : 'experience'}>
             <div className="container">
                 <h2 className="experience_title">EXPERIENCE</h2>
-                {experience.map(item => (
-                    <div key={item} className="experience_block">
+                {experience.map((item, i) => (
+                    <div key={i} className="experience_block">
                         <div className="experience_info">
                             <div className="experience_job">
                                 <h4 className="experience_job_title">{item.title}</h4>

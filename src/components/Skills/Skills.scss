@@ -1,0 +1,90 @@
+@use './src/_colors.scss';
+
+.skills {
+  padding-top: 86px;
+  padding-bottom: 92px;
+  position: relative;
+  transition: 0.5s ease;
+
+  &.active {
+    margin-left: 600px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: colors.$purple;
+    left: 0;
+    bottom: 0;
+
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+  }
+
+  &_stack{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    margin-top: 57px;
+  }
+
+  &_icons {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  &_icon {
+    margin-right: 33px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+
+    svg {
+      height: 80px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg path {
+      transition: 0.5s ease;
+    }
+
+    &:hover svg path {
+      fill: colors.$purple-light
+    }
+
+    &.active > .skills_descr {
+      bottom: -30px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &_icon:hover > &_descr {
+    bottom: -30px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &_descr{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
