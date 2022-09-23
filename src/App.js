@@ -17,8 +17,6 @@ import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
 import {useState} from "react";
 
-const VisibilitySensor = require('react-visibility-sensor');
-
 function App() {
     const menu = [
         {
