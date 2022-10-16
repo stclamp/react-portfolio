@@ -1,7 +1,7 @@
 .modal {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
   position: fixed;
   left: 0;
   top: 0;
@@ -27,10 +27,12 @@
       right: 250px;
       top: 110px;
       cursor: pointer;
+
       path {
         stroke: #000;
       }
     }
+
     .modal_img {
       border-radius: 10px;
       width: 80vw;

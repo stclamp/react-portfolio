@@ -35,13 +35,13 @@
     margin-top: 47px;
   }
 
-  &_job_title{
+  &_job_title {
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
   }
 
-  &_place{
+  &_place {
     margin-top: 6px;
     font-weight: 600;
     font-size: 28px;
@@ -56,12 +56,87 @@
     color: colors.$purple;
   }
 
-  &_descr{
+  &_descr {
     font-weight: 400;
     font-size: 28px;
     line-height: 42px;
     margin-top: 53px;
     max-width: 744px;
     margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .experience {
+    &.active {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .experience {
+    &_title {
+      font-size: 42px;
+    }
+
+    &_block {
+      margin-top: 37px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+  .experience_job_title {
+    font-size: 27px;
+  }
+
+  .experience_place {
+    margin-top: 2px;
+    font-size: 24px;
+  }
+
+  .experience_duration {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .experience {
+    padding-top: 49px;
+
+    &_title {
+      font-size: 42px;
+      text-align: center;
+    }
+
+    &_block {
+      margin-top: 37px;
+    }
+
+    &_info {
+      flex-wrap: wrap;
+    }
+
+    &_job_title {
+      font-size: 29px;
+    }
+
+    &_place {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    &_duration {
+      font-size: 18px;
+    }
+
+    &_descr {
+      font-size: 21px;
+      line-height: 35px;
+      margin-top: 41px;
+      margin-bottom: 0px;
+    }
   }
 }

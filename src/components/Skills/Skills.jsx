@@ -1,9 +1,6 @@
 import './Skills.scss';
-import {useState} from "react";
 
-const Skills = ({skills, isActive}) => {
-
-    const [skillsIsActive, skillsSetIsActive] = useState(false)
+const Skills = ({ skills, isActive }) => {
 
     return (
         <div className={isActive ? 'skills active' : 'skills'}>
@@ -12,7 +9,7 @@ const Skills = ({skills, isActive}) => {
                 <h5 className="skills_stack">Technology & languages</h5>
                 <div className="skills_icons">
                     {skills.map((skill, i) => (
-                        <div key={i} onClick={() => skillsSetIsActive(!skillsIsActive)} className={skillsIsActive ? 'skills_icon active' : 'skills_icon'}>
+                        <div key={i} className='skills_icon'>
                             {skill.svg}
                             <div className='skills_descr'>{skill.name}</div>
                         </div>

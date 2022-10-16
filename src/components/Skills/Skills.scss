@@ -28,7 +28,7 @@
     text-transform: uppercase;
   }
 
-  &_stack{
+  &_stack {
     font-weight: 400;
     font-size: 28px;
     line-height: 42px;
@@ -58,33 +58,76 @@
     svg path {
       transition: 0.5s ease;
     }
-
-    &:hover svg path {
-      fill: colors.$purple-light
-    }
-
-    &.active > .skills_descr {
-      bottom: -30px;
-      opacity: 1;
-      visibility: visible;
-    }
   }
 
-  &_icon:hover > &_descr {
+  &_icon:hover>&_descr {
     bottom: -30px;
     opacity: 1;
     visibility: visible;
   }
 
-  &_descr{
+  &_descr {
     position: absolute;
-    bottom: 10px;
+    bottom: -30px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
     transition: 0.5s ease;
     font-weight: 400;
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .skills {
+    &.active {
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .skills {
+    &_title {
+      font-size: 42px;
+    }
+
+    &_stack {
+      margin-top: 37px;
+    }
+
+    &_icons {
+      flex-wrap: wrap;
+    }
+
+    &_icon {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .skills {
+    padding-top: 49px;
+    padding-bottom: 49px;
+
+    &_title {
+      font-size: 42px;
+      text-align: center;
+    }
+
+    &_stack {
+      margin-top: 35px;
+      text-align: center;
+    }
+
+    &_icons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &_icon {
+      margin-bottom: 50px;
+      margin-right: 25px;
+    }
   }
 }
