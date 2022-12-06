@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.065a39d6.css",
+    "main.js": "/static/js/main.a59f7c16.js",
+    "static/media/domeo.webp": "/static/media/domeo.114db8b07e01eeba1f6c.webp",
+    "static/media/digital-flow.webp": "/static/media/digital-flow.5e42d948f20fb4069f99.webp",
+    "static/media/restaurants_bd.webp": "/static/media/restaurants_bd.b2e47eaffda77dc18b32.webp",
+    "static/media/traffic_shark.webp": "/static/media/traffic_shark.06f7042f84164adb7d6b.webp",
+    "static/media/light-boost.webp": "/static/media/light-boost.76fee119ed2d2686b251.webp",
+    "static/media/insurance.webp": "/static/media/insurance.b715126f86a96456ad16.webp",
+    "static/media/avatar.webp": "/static/media/avatar.e333697fe377d7071c54.webp",
+    "index.html": "/index.html",
+    "static/media/menu.svg": "/static/media/menu.6f17bffd1d63da3f94f9a44fbaea8c73.svg",
+    "static/media/close.svg": "/static/media/close.9f6122be59e6930db5599b77eb503ec1.svg",
+    "main.065a39d6.css.map": "/static/css/main.065a39d6.css.map",
+    "main.a59f7c16.js.map": "/static/js/main.a59f7c16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.065a39d6.css",
+    "static/js/main.a59f7c16.js"
+  ]
+}
